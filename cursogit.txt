@@ -1,0 +1,939 @@
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ ls
+hola.html.txt  holamundo.html
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ pwd
+/c/Users/pablo/OneDrive - Universidad del Istmo/C Git
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ cd descargas
+bash: cd: descargas: No such file or directory
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ ls
+'Nueva carpeta'/   hola.html.txt   holamundo.html
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ pwd Nueva carpeta
+/c/Users/pablo/OneDrive - Universidad del Istmo/C Git
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ ls
+'Nueva carpeta'/   hola.html.txt   holamundo.html
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ ls
+hola.html.txt  holamundo.html  nuevo/
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ cd nuevo/
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/nuevo (master)
+$ ls
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/nuevo (master)
+$ pwd
+/c/Users/pablo/OneDrive - Universidad del Istmo/C Git/nuevo
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/nuevo (master)
+$ cd ..
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ pwd
+/c/Users/pablo/OneDrive - Universidad del Istmo/C Git
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ git branch
+* master
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ ls
+hola.html.txt  holamundo.html  nuevo/
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ mkdir hacks
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ ls
+hacks/  hola.html.txt  holamundo.html  nuevo/
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git (master)
+$ cd hacks/
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ ls
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ pwd
+/c/Users/pablo/OneDrive - Universidad del Istmo/C Git/hacks
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git init
+Initialized empty Git repository in C:/Users/pablo/OneDrive - Universidad del Istmo/C Git/hacks/.git/
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ ls
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ ls -a
+./  ../  .git/
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ cd .git
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks/.git (GIT_DIR!)
+$ ls -a
+./  ../  HEAD  config  description  hooks/  info/  objects/  refs/
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks/.git (GIT_DIR!)
+$ cd ..
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ ls
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ code .
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        holamundo
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        holamundo
+        holamundo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add holamundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add .txt
+fatal: pathspec '.txt' did not match any files
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add .
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git git status
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   holamundo
+        new file:   holamundo.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   holamundo
+        new file:   holamundo.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        adiosmundo.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add .txt
+fatal: pathspec '.txt' did not match any files
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add *.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   adiosmundo.txt
+        new file:   holamundo
+        new file:   holamundo.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   adiosmundo.txt
+        new file:   holamundo
+        new file:   holamundo.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   adiosmundo.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   adiosmundo.txt
+        new file:   holamundo
+        new file:   holamundo.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   adiosmundo.txt
+        modified:   holamundo
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add adiosmundo.txt holamundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add holamundo
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   adiosmundo.txt
+        new file:   holamundo
+        new file:   holamundo.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git commit -m "commit inicial"
+[master (root-commit) 7431ce5] commit inicial
+ 3 files changed, 5 insertions(+)
+ create mode 100644 adiosmundo.txt
+ create mode 100644 holamundo
+ create mode 100644 holamundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   holamundo
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add .
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   holamundo
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git commit
+[master a64ff8a] Agregue unas cosas
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ ls
+adiosmundo.txt  holamundo  holamundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ rm holamundo
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    holamundo
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add holamundo
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    holamundo
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git commit -m "elimine un archivo"
+[master 94c8027] elimine un archivo
+ 1 file changed, 3 deletions(-)
+ delete mode 100644 holamundo
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git rm adiosmundo.txt
+rm 'adiosmundo.txt'
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    adiosmundo.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git restore --staged adiosmundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    adiosmundo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ ls
+holamundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git restore adiosmundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ ls
+adiosmundo.txt  holamundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ mv adiosmundo.txt adios.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ ls
+adios.txt  holamundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    adiosmundo.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        adios.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add *.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   adios.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    adiosmundo.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add adiosmundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    adiosmundo.txt -> adios.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git log
+commit 94c80274cd654e21a1fd1e0d6908af97028134c1 (HEAD -> master)
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:24:48 2022 -0600
+
+    elimine un archivo
+
+commit a64ff8afde8c13d7bf1589ccda00e09caf58f25c
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:21:04 2022 -0600
+
+    Agregue unas cosas
+
+commit 7431ce5214441159b121404a55007b2e943300bd
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:19:11 2022 -0600
+
+    commit inicial
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git mv adios.txt adiosgente.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    adiosmundo.txt -> adiosgente.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git commit -m "cambiando nombre"
+[master bd93c42] cambiando nombre
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename adiosmundo.txt => adiosgente.txt (100%)
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git log
+commit bd93c4287faa07a298a74e04a5629bb47e3806a3 (HEAD -> master)
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:33:12 2022 -0600
+
+    cambiando nombre
+
+commit 94c80274cd654e21a1fd1e0d6908af97028134c1
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:24:48 2022 -0600
+
+    elimine un archivo
+
+commit a64ff8afde8c13d7bf1589ccda00e09caf58f25c
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:21:04 2022 -0600
+
+    Agregue unas cosas
+
+commit 7431ce5214441159b121404a55007b2e943300bd
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:19:11 2022 -0600
+
+    commit inicial
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add .gitignore
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git commit -m "gitignore"
+[master 7dce216] gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status -s
+?? archivo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status -s
+?? archivo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add archivo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status -s
+A  archivo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status -s
+A  archivo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git commit "agregando archivo"
+error: pathspec 'agregando archivo' did not match any file(s) known to git
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git commit
+[master 34e0347] agregando archivo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 archivo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git log
+commit 34e0347dea574a9027e2310bb30d9de29a0d0475 (HEAD -> master)
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:42:57 2022 -0600
+
+    agregando archivo
+
+commit 7dce2164da9f13f1aed8f3abef145a81db26a242
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:37:55 2022 -0600
+
+    gitignore
+
+commit bd93c4287faa07a298a74e04a5629bb47e3806a3
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:33:12 2022 -0600
+
+    cambiando nombre
+
+commit 94c80274cd654e21a1fd1e0d6908af97028134c1
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:24:48 2022 -0600
+
+    elimine un archivo
+
+commit a64ff8afde8c13d7bf1589ccda00e09caf58f25c
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:21:04 2022 -0600
+
+    Agregue unas cosas
+
+commit 7431ce5214441159b121404a55007b2e943300bd
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:19:11 2022 -0600
+
+    commit inicial
+(END)
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git diff
+diff --git a/archivo.txt b/archivo.txt
+index 50998d1..3794133 100644
+--- a/archivo.txt
++++ b/archivo.txt
+@@ -1 +1,2 @@
+-wtf
+\ No newline at end of file
++wtf
++da fak nigga
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   archivo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add & commit archivo.txt
+[1] 1479
+bash: commit: command not found
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+[1]+  Done                    git add
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git commit
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   archivo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add *.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git diff --staged
+diff --git a/archivo.txt b/archivo.txt
+index 50998d1..3794133 100644
+--- a/archivo.txt
++++ b/archivo.txt
+@@ -1 +1,2 @@
+-wtf
+\ No newline at end of file
++wtf
++da fak nigga
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git log
+commit 34e0347dea574a9027e2310bb30d9de29a0d0475 (HEAD -> master)
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:42:57 2022 -0600
+
+    agregando archivo
+
+commit 7dce2164da9f13f1aed8f3abef145a81db26a242
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:37:55 2022 -0600
+
+    gitignore
+
+commit bd93c4287faa07a298a74e04a5629bb47e3806a3
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:33:12 2022 -0600
+
+    cambiando nombre
+
+commit 94c80274cd654e21a1fd1e0d6908af97028134c1
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:24:48 2022 -0600
+
+    elimine un archivo
+
+commit a64ff8afde8c13d7bf1589ccda00e09caf58f25c
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:21:04 2022 -0600
+
+    Agregue unas cosas
+
+commit 7431ce5214441159b121404a55007b2e943300bd
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:19:11 2022 -0600
+
+    commit inicial
+(END)
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git log --oneline
+34e0347 (HEAD -> master) agregando archivo
+7dce216 gitignore
+bd93c42 cambiando nombre
+94c8027 elimine un archivo
+a64ff8a Agregue unas cosas
+7431ce5 commit inicial
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   archivo.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   archivo.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add archivo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git mv archivo.txt commandosgit.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    archivo.txt
+        new file:   commandosgit.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   commandosgit.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git add commandosgit.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    archivo.txt
+        new file:   commandosgit.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status -s
+D  archivo.txt
+A  commandosgit.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git commit commandosgit.txt -m "renombre un archivo"
+[master 78a32f8] renombre un archivo
+ 1 file changed, 691 insertions(+)
+ create mode 100644 commandosgit.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    archivo.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git log
+commit 78a32f8ccf744750b1c513f21d44b79740a0f857 (HEAD -> master)
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 11:10:12 2022 -0600
+
+    renombre un archivo
+
+commit 34e0347dea574a9027e2310bb30d9de29a0d0475
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:42:57 2022 -0600
+
+    agregando archivo
+
+commit 7dce2164da9f13f1aed8f3abef145a81db26a242
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:37:55 2022 -0600
+
+    gitignore
+
+commit bd93c4287faa07a298a74e04a5629bb47e3806a3
+Author: pabloflores465 <pablopolis2015@gmail.com>
+Date:   Fri Apr 29 10:33:12 2022 -0600
+
+    cambiando nombre
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git branch
+* master
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git checkout -b ramab
+Switched to a new branch 'ramab'
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ git branch
+fatal: Failed to resolve HEAD as a valid ref.
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ git branch
+  master
+* ramab
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ git checkout -b master
+fatal: a branch named 'master' already exists
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ git log --oneline
+78a32f8 (HEAD -> ramab, master) renombre un archivo
+34e0347 agregando archivo
+7dce216 gitignore
+bd93c42 cambiando nombre
+94c8027 elimine un archivo
+a64ff8a Agregue unas cosas
+7431ce5 commit inicial
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ cat holamundo.txt
+mi primer programa
+s
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ git checkout master
+Switched to branch 'master'
+D       archivo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git checkout ramab
+Switched to branch 'ramab'
+D       archivo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ git status
+On branch ramab
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    archivo.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   holamundo.txt
+
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ git checkout master
+Switched to branch 'master'
+D       archivo.txt
+M       holamundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ cat holamundo.txt
+mi primer programa
+siu
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git merge ramab
+Already up to date.
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git checkout ramab
+Switched to branch 'ramab'
+D       archivo.txt
+M       holamundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ git add *.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ git checkout master
+Switched to branch 'master'
+D       archivo.txt
+M       holamundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git merge ramab
+Already up to date.
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git checkout ramab
+Switched to branch 'ramab'
+D       archivo.txt
+M       holamundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ ls
+adiosgente.txt  commandosgit.txt  holamundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ git remote add origin https://github.com/pabloflores465/primer-repo.git
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramab)
+$ git checkout master
+Switched to branch 'master'
+D       archivo.txt
+M       holamundo.txt
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git merge ramab
+Already up to date.
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git push -u origin master
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (21/21), 3.82 KiB | 782.00 KiB/s, done.
+Total 21 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/pabloflores465/primer-repo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/pabloflores465/primer-repo.git'
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (master)
+$ git checkout -b ramaC
+Switched to a new branch 'ramaC'
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramaC)
+$ git push -u origin ramaC
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ramaC' on GitHub by visiting:
+remote:      https://github.com/pabloflores465/primer-repo/pull/new/ramaC
+remote:
+To https://github.com/pabloflores465/primer-repo.git
+ * [new branch]      ramaC -> ramaC
+branch 'ramaC' set up to track 'origin/ramaC'.
+
+pablo@PabloPC MINGW64 ~/OneDrive - Universidad del Istmo/C Git/hacks (ramaC)
+$
